@@ -1,0 +1,48 @@
+.detail-page{
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    top:5%;
+    right: 5%;
+    z-index: 1500;
+    padding: 10rem;
+    background-image: url(../img/img-003.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    display: none;
+    //border-radius: 10rem;
+    //transition: all 10s;
+
+    &:target {
+        opacity: 1;
+        display: block;
+    }
+
+    &__text{
+        @include respond-font($font-size-text);
+        height: 95%; //70vh;
+        width: 95%; //70vw;
+        padding: 10rem;
+        color: $color-white;
+        background-color: rgba($color-black, .8);
+        @include CentralizeXY();
+        //border-radius: 10rem;
+        overflow-y: scroll;
+        text-align: left;
+
+        li{
+            padding: 1rem;
+        }
+    }
+
+    &__close{
+        @include respond-font($font-size-medium);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        text-decoration: none;
+        color: $color-white;
+    }
+}
