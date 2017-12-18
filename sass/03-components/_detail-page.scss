@@ -1,36 +1,49 @@
 .detail-page{
     position: fixed;
-    width: 90vw;
-    height: 90vh;
-    top:5%;
-    right: 5%;
+    width: 95vw;
+    height: 95vh;
+    top: 2.5%;
+    right: 2.5%;
     z-index: 1500;
-    padding: 10rem;
-    background-image: url(../img/img-003.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0;
-    display: none;
-    //border-radius: 10rem;
-    //transition: all 10s;
+    padding: 2rem;
+    border-radius: 4rem;
+    transform: scale(0);
+    transition: all .5s;
+    overflow-y: auto;
 
+    &--1{background-color: rgba($color-primary, .95);}
+    &--2{background-color: rgba($color-secondary, .95);}
+    &--3{background-color: rgba($color-quaternary, .95);}
+    &--4{background-color: rgba($color-tertiary, .95);}
+    
     &:target {
-        opacity: 1;
-        display: block;
+        transform: scale(1);
+    }
+
+    &__img{
+        @include respond-height(45rem);
+        background-size: cover;
+        background-position: center;
+        padding: 1rem;
+        margin-top: 5rem;
+        border-radius: 4rem;
+
+        &--1{background-image: url("../img/img-004.jpg");}
+        &--2{background-image: url("../img/img-005.jpg");}
+        &--3{background-image: url("../img/img-006.jpg");}
+        &--4{background-image: url("../img/img-007.jpg");}
     }
 
     &__text{
         @include respond-font($font-size-text);
-        height: 95%; //70vh;
-        width: 95%; //70vw;
-        padding: 10rem;
-        color: $color-white;
-        background-color: rgba($color-black, .8);
-        @include CentralizeXY();
-        //border-radius: 10rem;
-        overflow-y: scroll;
+        width: 100%;
+        padding: 1rem;
+        color: $color-text-dark;
         text-align: left;
+
+        ol{
+            padding: 2rem;
+        }
 
         li{
             padding: 1rem;
@@ -38,11 +51,11 @@
     }
 
     &__close{
-        @include respond-font($font-size-medium);
+        @include respond-font($font-size-large);
         position: absolute;
-        top: 5%;
+        top: 2%;
         right: 5%;
         text-decoration: none;
-        color: $color-white;
+        color: $color-text-dark;
     }
 }

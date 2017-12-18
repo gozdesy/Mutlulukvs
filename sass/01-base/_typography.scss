@@ -8,24 +8,34 @@ body{
     font-family: $font-family-secondary;
     font-weight: 800;
     letter-spacing: .5rem;
-    
+    backface-visibility: hidden;
+    display: block;
+
     animation-name: DisplayByIncreasingFont;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 
-    backface-visibility: hidden;
+    &__line{
+        @include respond(tab-land){
+            display: block;
+        }
+    }   
 }
 
 .heading-sub{
     @include respond-font($font-size-medium);
-    color: $color-text-light;
+    color: $color-white;
     font-weight: 1000;
     letter-spacing: 1rem;
-    
-    animation-name: MoveInRight;
-    animation-duration: 2s;
-
     backface-visibility: hidden;
+    width: 50rem;
+    margin: auto;
+    display: block;
+
+    animation-name: MoveInRight;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .heading-secondary{
@@ -37,7 +47,7 @@ body{
 
 .heading-tertiary{
     @include respond-font($font-size-small);
-    color: $color-primary; 
+    color: $color-text-dark; 
     padding: 1rem;
     text-align: center;
 }

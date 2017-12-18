@@ -19,6 +19,12 @@
     transform: translate(-50%, 0);
 }
 
+@mixin CentralizeY(){
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 //Valid $breakpoint values
 //------------------------------------------
 //  phone
@@ -65,5 +71,18 @@ $max-width-tab-land: 75em;  //1200px/16
     };
     @media only screen and (max-width:$max-width-phone){
         font-size: $font-size * 0.84;
+    };
+}
+
+@mixin respond-height($height){
+    height: $height;
+    @media only screen and (max-width:$max-width-tab-land){
+        height: $height * 0.9;
+    };
+    @media only screen and (max-width:$max-width-tab-port){
+        height: $height * 0.8;
+    };
+    @media only screen and (max-width:$max-width-phone){
+        height: $height * 0.7;
     };
 }

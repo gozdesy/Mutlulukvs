@@ -1,48 +1,98 @@
 @keyframes MoveInRight{
     0%{
-        transform: translateX(-100rem);
+        opacity: 0;
+        transform: translate(0, 100rem);
     }
     100%{
-        transform: translate(0);
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
 @keyframes DisplayByIncreasingFont{
     0%{
-    opacity:0;
-    font-size:1rem;
+        opacity:0.01;
+        font-size:$font-size-largest * 0.01;
     }
+    5%{
+        opacity:0.05;
+        font-size:$font-size-largest * 0.05;
+        }
     10%{
         opacity:0.1;
         font-size:$font-size-largest * 0.1;
     }
+    15%{
+        opacity:0.15;
+        font-size:$font-size-largest * 0.15;
+    }
     20%{
-    opacity:0.2;
-    font-size:$font-size-largest * 0.2;
+        opacity:0.2;
+        font-size:$font-size-largest * 0.2;
+    }
+    25%{
+        opacity:0.25;
+        font-size:$font-size-largest * 0.25;
+    }
+    30%{
+        opacity:0.3;
+        font-size:$font-size-largest * 0.3;
+    }
+    35%{
+        opacity:0.35;
+        font-size:$font-size-largest * 0.35;
     }
     40%{
-    opacity:0.4;
-    font-size:$font-size-largest * 0.4;
+        opacity:0.4;
+        font-size:$font-size-largest * 0.4;
+    }
+    45%{
+        opacity:0.45;
+        font-size:$font-size-largest * 0.45;
+    }
+    50%{
+        opacity:0.5;
+        font-size:$font-size-largest * 0.5;
+    }
+    55%{
+        opacity:0.55;
+        font-size:$font-size-largest * 0.55;
     }
     60%{
-    opacity:0.6;
-    font-size:$font-size-largest * 0.6;
+        opacity:0.6;
+        font-size:$font-size-largest * 0.6;
     }
+    65%{
+        opacity:0.65;
+        font-size:$font-size-largest * 0.65;
+    }
+    70%{
+        opacity:0.7;
+        font-size:$font-size-largest * 0.7;
+    }
+    75%{
+        opacity:0.75;
+        font-size:$font-size-largest * 0.75;
+        }
     80%{
-    opacity:0.8;
-    font-size:$font-size-largest * 0.8;
+        opacity:0.8;
+        font-size:$font-size-largest * 0.8;
     }
+    85%{
+        opacity:0.85;
+        font-size:$font-size-largest * 0.85;
+        }
     90%{
-    opacity:0.9;
-    font-size:$font-size-largest * 0.9;
+        opacity:0.9;
+        font-size:$font-size-largest * 0.9;
     }
     95%{
-    opacity:0.95;
-    font-size:$font-size-largest * 0.95;
+        opacity:0.95;
+        font-size:$font-size-largest * 0.95;
     }
     100%{
-    opacity:1;
-    font-size:$font-size-largest;
+        opacity:1;
+        font-size:$font-size-largest;
     }
 }
 
