@@ -1,3 +1,83 @@
 .footer {
-  
+    width: 100%;
+    margin: auto;
+    padding: 10rem;
+    background-color: $color-grey-dark;
+    font-size: $font-size-small;
+    letter-spacing: .1rem;
+    
+    @include respond(tab-land){
+        padding: 6rem;
+        font-size: $font-size-text;
+        letter-spacing: initial;
+    }
+    @include respond(tab-port){
+        padding: 4rem;
+    }
+
+    &__cell{
+        width: 100%;
+        @include respond-height(8rem);
+        border-bottom: 1px solid $color-grey-medium;
+        display: inline-block;
+        padding: 1.5rem;  
+        transition: all .2s;
+        backface-visibility: hidden;
+        text-align: center;
+
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px rgba($color-black, .2);
+        }
+
+        @include respond(tab-port){
+            padding: .5rem;
+        }
+    }
+
+    &__social{
+        display: inline-block;
+        transition: all .2s;
+        backface-visibility: hidden;
+
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+
+    &__text{
+        width: 70%;
+        height: 100%;
+        display: inline-block;
+        float: right;
+        color: $color-primary;
+        text-decoration: none;
+    }
+
+    &__text--smaller{
+        width: 70%;
+        height: 100%;
+        display: inline-block;
+        float: right;
+        color: $color-primary;
+        @include respond-font($font-size-text-smaller);
+        text-align: center;
+    }
+
+    &__address{
+        @include respond-font($font-size-text);
+    }
+}
+
+#footer__fonticon--1, #footer__fonticon--2, #footer__fonticon--3, #footer__fonticon--4, 
+#footer__fonticon--5, #footer__fonticon--6, #footer__fonticon--7, #footer__fonticon--8{
+    width: 30%;
+    float: left;
+    margin: 0;
+    color: $color-primary;
+    
+    &, &::before, &::after{
+        font-size: 4rem !important; 
+        font-weight: 600;
+    }
 }

@@ -80,6 +80,10 @@ body{
     }
 }
 
+.handwriting{
+    font-family: $font-family-secondary;
+}
+
 .handwriting-small{
     font-family: $font-family-secondary;
     font-size: $font-size-small * 1.4;

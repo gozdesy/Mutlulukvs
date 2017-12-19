@@ -21,5 +21,9 @@
     color: $color-text-dark;
     background-color: $color-grey-light;
     position: relative;
-    //height: 50rem;
+    height: 80rem;
+    @include respond(tab-port){
+        height: 240rem;
+        padding: 2rem;
+    }
 }
