@@ -1,8 +1,7 @@
 //colors
 //-----------------------------------
-// $color-primary: #67D5B5;
-// $color-primary-light:#7bfdd6;
-// $color-primary-dark: #48947d;
+$color-white: #fff;
+$color-black: #000;
 
 $color-primary: #84B1ED;
 $color-primary-light:#b7cfee;
@@ -14,15 +13,12 @@ $color-secondary-dark: rgb(151, 73, 84);
 $color-tertiary: #C89EC4;
 $color-quaternary: #67D5B5;
 
-$color-text-light: #FCFEFE;
-$color-text-dark: rgb(78, 78, 78);
+$color-grey-light: rgb(250, 250, 250);
+$color-grey-medium: rgb(230, 230, 230); 
+$color-grey-dark:rgb(65, 65, 65); 
 
-$color-grey-light: #FCFEFE;
-$color-grey-medium: rgb(144, 145, 145);
-$color-grey-dark: rgb(65, 66, 66);
-
-$color-white: #fff;
-$color-black: #000;
+$color-text-light: $color-white;// #FCFEFE;
+$color-text-dark: $color-grey-dark;
 
 //grid
 //-----------------------------------

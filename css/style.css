@@ -48,7 +48,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #FCFEFE; }
+  background-color: #fafafa; }
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }
@@ -58,7 +58,7 @@ body {
   color: #fff;
   font-family: "Parisienne", Arial, Helvetica, sans-serif;
   font-weight: 800;
-  letter-spacing: .5rem;
+  letter-spacing: .2rem;
   backface-visibility: hidden;
   display: block;
   animation-name: DisplayByIncreasingFont;
@@ -117,7 +117,7 @@ body {
 
 .heading-tertiary {
   font-size: 2rem;
-  color: #4e4e4e;
+  color: #414141;
   padding: 1rem;
   text-align: center; }
   @media only screen and (max-width: 75em) {
@@ -132,7 +132,7 @@ body {
 
 .heading-quaternary {
   font-size: 2rem;
-  color: #FCFEFE;
+  color: #fff;
   padding: 1rem;
   text-align: center; }
   @media only screen and (max-width: 75em) {
@@ -147,7 +147,7 @@ body {
 
 .paragraph--primary {
   font-size: 2rem;
-  color: #4e4e4e;
+  color: #414141;
   text-align: center;
   line-height: 1.5;
   letter-spacing: .3rem;
@@ -172,7 +172,7 @@ body {
 
 .paragraph--secondary {
   font-size: 1.6rem;
-  color: #4e4e4e;
+  color: #414141;
   padding: 1rem 1rem;
   text-align: center;
   line-height: 1.5; }
@@ -186,7 +186,7 @@ body {
     .paragraph--secondary {
       font-size: 1.344rem; } }
   .paragraph--secondary--text-light {
-    color: #FCFEFE; }
+    color: #fff; }
 
 .handwriting {
   font-family: "Parisienne", Arial, Helvetica, sans-serif; }
@@ -271,13 +271,13 @@ body {
 
 @keyframes MoveDown-1 {
   0% {
-    transform: translateY(-100rem); }
+    transform: translateY(-80rem); }
   100% {
     transform: translate(0); } }
 
 @keyframes MoveDown-2 {
   0% {
-    transform: translateY(-80rem); }
+    transform: translateY(-65rem); }
   100% {
     transform: translate(0); } }
 
@@ -289,7 +289,7 @@ body {
 
 .header {
   text-align: center;
-  background-image: linear-gradient(to top, transparent 15%, rgba(183, 207, 238, 0.65), rgba(75, 102, 136, 0.85)), url(../img/img-001.jpg);
+  background-image: url(../img/img-001.jpg);
   background-size: cover;
   background-position: top;
   height: 97vh; }
@@ -297,15 +297,19 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem; }
 
 .footer {
   width: 100%;
   margin: auto;
   padding: 10rem;
-  background-color: #414242;
+  background-color: #414141;
   font-size: 2rem;
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem;
+  z-index: 1700; }
   @media only screen and (max-width: 75em) {
     .footer {
       padding: 6rem;
@@ -317,7 +321,7 @@ body {
   .footer__cell {
     width: 100%;
     height: 8rem;
-    border-bottom: 1px solid #909191;
+    border-bottom: 1px solid #e6e6e6;
     display: inline-block;
     padding: 1.5rem;
     transition: all .2s;
@@ -482,7 +486,7 @@ body {
     width: 2rem;
     height: 2rem;
     position: absolute;
-    z-index: 1;
+    z-index: 1600;
     border-radius: 100rem;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -616,7 +620,7 @@ body {
       padding: 1rem; }
       .courses__box__list__item {
         font-size: 1.6rem;
-        color: #4e4e4e;
+        color: #414141;
         padding: .5rem .5rem;
         text-align: center; }
         @media only screen and (max-width: 75em) {
@@ -704,7 +708,7 @@ body {
     font-size: 1.6rem;
     width: 100%;
     padding: 1rem;
-    color: #4e4e4e;
+    color: #414141;
     text-align: left; }
     @media only screen and (max-width: 75em) {
       .detail-page__text {
@@ -725,7 +729,7 @@ body {
     top: 2%;
     right: 5%;
     text-decoration: none;
-    color: #4e4e4e; }
+    color: #414141; }
     @media only screen and (max-width: 75em) {
       .detail-page__close {
         font-size: 5.76rem; } }
@@ -764,15 +768,14 @@ body {
       background-image: url("../img/secil.jpg"); }
     .team__person__picture--2 {
       background-image: url("../img/nogay.jpg");
-      z-index: 1500; }
+      z-index: 1400; }
     .team__person__picture--3 {
       background-image: url("../img/serpil.jpg"); }
     .team__person__picture--4 {
       background-image: url("../img/cansu.jpg");
-      z-index: 1500; }
+      z-index: 1400; }
     .team__person__picture--5 {
-      background-image: url("../img/ismet_cem_ozer.jpg");
-      z-index: 1500; }
+      background-image: url("../img/ismet_cem_ozer.jpg"); }
     .team__person__picture__link {
       display: inline-block;
       z-index: 1000;
@@ -856,7 +859,7 @@ body {
     .team__list__item {
       padding: 1rem; }
     .team__list, .team__list a {
-      color: #FCFEFE;
+      color: #fff;
       font-size: 1.6rem; }
       @media only screen and (max-width: 75em) {
         .team__list, .team__list a {
@@ -877,6 +880,13 @@ body {
   #team__fonticon--1, #team__fonticon--1::before, #team__fonticon--1::after {
     font-size: 4rem !important;
     font-weight: 800; }
+
+.gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .section-about {
   width: 100%;
@@ -899,7 +909,7 @@ body {
 .section-courses {
   width: 100%;
   padding: 8rem;
-  color: #4e4e4e;
+  color: #414141;
   position: relative;
   height: 80rem; }
   @media only screen and (max-width: 56.25em) {
@@ -913,3 +923,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-team {
       padding: 1rem; } }
+
+.section-gallery {
+  width: 100%;
+  height: 80rem;
+  padding: 8rem;
+  position: relative; }

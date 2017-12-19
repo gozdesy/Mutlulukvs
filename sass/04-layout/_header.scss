@@ -1,12 +1,15 @@
 .header{
    text-align:center;
-   background-image: linear-gradient(to top, transparent 15%, rgba($color-primary-light, .65), rgba($color-primary-dark, .85)),url(../img/img-001.jpg);
+   background-image: url(../img/img-001.jpg);
    background-size: cover;
    background-position: top;
    height: 97vh;
 
    &__text{
     @include CentralizeXY();
+    background-color: rgba($color-black, .5);
+    padding: 2rem;
+    border-radius: 1rem;
    }
 }
 

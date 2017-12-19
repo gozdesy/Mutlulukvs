@@ -5,6 +5,7 @@
     background-color: $color-grey-dark;
     font-size: $font-size-small;
     letter-spacing: .1rem;
+    z-index: 1700;
     
     @include respond(tab-land){
         padding: 6rem;
