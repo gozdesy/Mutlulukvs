@@ -13,17 +13,28 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }   
+    } 
+    @include respond(tab-port){
+        padding: 2rem;
+    }
 }
 
 .section-courses{
+    width: 100%;
     padding: 8rem;
     color: $color-text-dark;
-    background-color: $color-grey-light;
     position: relative;
     height: 80rem;
     @include respond(tab-port){
-        height: 240rem;
-        padding: 2rem;
+        height: 200rem;
+        padding: 1rem;
+    }
+}
+
+.section-team{
+    width: 100%;
+    padding: 6rem;
+    @include respond(tab-port){
+        padding: 1rem;
     }
 }

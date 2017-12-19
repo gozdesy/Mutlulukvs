@@ -24,6 +24,10 @@
   .u-emphasize:hover {
     transform: scale(1.1); }
 
+.u-text-school-name {
+  font-style: italic;
+  font-weight: 200; }
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -43,7 +47,8 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #FCFEFE; }
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }
@@ -125,6 +130,21 @@ body {
     .heading-tertiary {
       font-size: 1.68rem; } }
 
+.heading-quaternary {
+  font-size: 2rem;
+  color: #FCFEFE;
+  padding: 1rem;
+  text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .heading-quaternary {
+      font-size: 1.92rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading-quaternary {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-quaternary {
+      font-size: 1.68rem; } }
+
 .paragraph--primary {
   font-size: 2rem;
   color: #4e4e4e;
@@ -165,6 +185,8 @@ body {
   @media only screen and (max-width: 37.5em) {
     .paragraph--secondary {
       font-size: 1.344rem; } }
+  .paragraph--secondary--text-light {
+    color: #FCFEFE; }
 
 .handwriting {
   font-family: "Parisienne", Arial, Helvetica, sans-serif; }
@@ -568,6 +590,9 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
+  @media only screen and (max-width: 56.25em) {
+    .courses {
+      padding: 1rem; } }
   .courses__box {
     height: 50rem;
     text-align: center;
@@ -575,6 +600,9 @@ body {
     box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
     position: relative;
     transition: all .2s; }
+    @media only screen and (max-width: 56.25em) {
+      .courses__box {
+        height: 44rem; } }
     .courses__box--1 {
       border: 3px solid #84B1ED; }
     .courses__box--2 {
@@ -708,6 +736,148 @@ body {
       .detail-page__close {
         font-size: 5.04rem; } }
 
+.team {
+  width: 100%;
+  padding: 8rem; }
+  .team__person__picture {
+    height: 30rem;
+    width: 50%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    transition: all .2s;
+    backface-visibility: hidden; }
+    @media only screen and (max-width: 75em) {
+      .team__person__picture {
+        height: 27rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__person__picture {
+        height: 24rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__person__picture {
+        height: 21rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__person__picture {
+        background-position: top; } }
+    .team__person__picture--1 {
+      background-image: url("../img/secil.jpg"); }
+    .team__person__picture--2 {
+      background-image: url("../img/nogay.jpg");
+      z-index: 1500; }
+    .team__person__picture--3 {
+      background-image: url("../img/serpil.jpg"); }
+    .team__person__picture--4 {
+      background-image: url("../img/cansu.jpg");
+      z-index: 1500; }
+    .team__person__picture--5 {
+      background-image: url("../img/ismet_cem_ozer.jpg");
+      z-index: 1500; }
+    .team__person__picture__link {
+      display: inline-block;
+      z-index: 1000;
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5); }
+      .team__person__picture__link a {
+        text-decoration: none; }
+        .team__person__picture__link a:hover {
+          transform: scale(1.3); }
+    .team__person__picture:hover {
+      transform: translateY(-2rem);
+      z-index: 2000; }
+  .team__person__text {
+    width: 40rem;
+    height: 32rem;
+    position: absolute;
+    -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+    z-index: 1000;
+    left: 84%;
+    padding: 3rem;
+    padding-top: 1.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 75em) {
+      .team__person__text {
+        width: 32rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__person__text {
+        width: 28rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__person__text {
+        width: 24rem; } }
+    @media only screen and (max-width: 75em) {
+      .team__person__text {
+        height: 28.8rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__person__text {
+        height: 25.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__person__text {
+        height: 22.4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__person__text {
+        width: 50rem; } }
+    .team__person__text--primary--up {
+      top: -10%;
+      background-image: linear-gradient(#84B1ED, #4b6688); }
+    .team__person__text--primary--down {
+      top: 10%;
+      background-image: linear-gradient(#84B1ED, #4b6688); }
+      @media only screen and (max-width: 56.25em) {
+        .team__person__text--primary--down {
+          top: -10%; } }
+    .team__person__text--secondary--up {
+      top: -10%;
+      background-image: linear-gradient(#EE7785, #974954); }
+    .team__person__text--secondary--down {
+      top: 10%;
+      background-image: linear-gradient(#EE7785, #974954); }
+      @media only screen and (max-width: 56.25em) {
+        .team__person__text--secondary--down {
+          top: -10%; } }
+  .team__list {
+    list-style: none;
+    width: 32rem; }
+    @media only screen and (max-width: 75em) {
+      .team__list {
+        width: 25.6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__list {
+        width: 22.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__list {
+        width: 19.2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__list {
+        width: 43rem; } }
+    .team__list__item {
+      padding: 1rem; }
+    .team__list, .team__list a {
+      color: #FCFEFE;
+      font-size: 1.6rem; }
+      @media only screen and (max-width: 75em) {
+        .team__list, .team__list a {
+          font-size: 1.536rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .team__list, .team__list a {
+          font-size: 1.44rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .team__list, .team__list a {
+          font-size: 1.344rem; } }
+    .team__list a {
+      display: inline-block; }
+
+#team__fonticon--1 {
+  width: 100%;
+  margin: 0;
+  color: #4b6688; }
+  #team__fonticon--1, #team__fonticon--1::before, #team__fonticon--1::after {
+    font-size: 4rem !important;
+    font-weight: 800; }
+
 .section-about {
   width: 100%;
   height: 100vh;
@@ -722,14 +892,24 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 2rem; } }
 
 .section-courses {
+  width: 100%;
   padding: 8rem;
   color: #4e4e4e;
-  background-color: #FCFEFE;
   position: relative;
   height: 80rem; }
   @media only screen and (max-width: 56.25em) {
     .section-courses {
-      height: 240rem;
-      padding: 2rem; } }
+      height: 200rem;
+      padding: 1rem; } }
+
+.section-team {
+  width: 100%;
+  padding: 6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-team {
+      padding: 1rem; } }

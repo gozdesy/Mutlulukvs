@@ -52,6 +52,13 @@ body{
     text-align: center;
 }
 
+.heading-quaternary{
+    @include respond-font($font-size-small);
+    color: $color-text-light; 
+    padding: 1rem;
+    text-align: center;
+}
+
 .paragraph{
     &--primary{
         @include respond-font($font-size-small);
@@ -77,6 +84,10 @@ body{
         padding: 1rem 1rem;
         text-align: center;
         line-height: 1.5;
+
+        &--text-light{
+            color: $color-text-light;
+        }
     }
 }
 

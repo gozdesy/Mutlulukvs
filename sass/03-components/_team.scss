@@ -1,0 +1,137 @@
+.team{
+    width: 100%;
+    padding: 8rem;
+
+    &__person{
+
+        &__picture{
+            @include respond-height(30rem);
+            width: 50%;
+            background-position: top right;
+            background-repeat: no-repeat;
+            position: relative;
+            text-align: center;
+            transition: all .2s;
+            backface-visibility: hidden;
+
+            @include respond(tab-port){
+                background-position: top;
+            }
+
+            &--1{
+                background-image: url("../img/secil.jpg");   
+            }
+
+            &--2{
+                background-image: url("../img/nogay.jpg"); 
+                z-index: 1500;  
+            }
+
+            &--3{
+                background-image: url("../img/serpil.jpg"); 
+            }
+
+            &--4{
+                background-image: url("../img/cansu.jpg"); 
+                z-index: 1500;  
+            }
+
+            &--5{
+                background-image: url("../img/ismet_cem_ozer.jpg"); 
+                z-index: 1500;  
+            }
+
+            &__link{
+                display: inline-block;
+                z-index: 1000;
+                position: absolute;
+                bottom: 1rem;
+                left: 0;
+                width: 100%;
+                background-color: rgba($color-white,.5);
+
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+
+            &:hover{
+                transform: translateY(-2rem);
+                z-index: 2000;
+            }
+        }
+
+        &__text{
+            //width: 40rem;
+            @include respond-width(40rem);
+            @include respond-height(32rem);
+
+            @include respond(tab-port){width: 50rem;}
+
+            position: absolute;
+            -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+            clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+            z-index: 1000;
+            left: 84%;
+            padding: 3rem; 
+            padding-top: 1.5rem; 
+            text-align: center;
+            
+            &--primary--up{
+                top:-10%;
+                background-image: linear-gradient($color-primary, $color-primary-dark);
+            }
+
+            &--primary--down{
+                top:10%;
+                background-image: linear-gradient($color-primary, $color-primary-dark);
+                @include respond(tab-port){top:-10%;}
+            }
+
+            &--secondary--up{
+                top: -10%;
+                background-image: linear-gradient($color-secondary, $color-secondary-dark);
+            }
+
+            &--secondary--down{
+                top: 10%;
+                background-image: linear-gradient($color-secondary, $color-secondary-dark);
+                @include respond(tab-port){top:-10%;}
+            }
+        }
+    }
+
+    &__list{
+        list-style: none;        
+        @include respond-width(32rem);
+        @include respond(tab-port){width: 43rem;}
+
+        &__item{
+            padding: 1rem;
+        }
+
+        &, & a{
+            color: $color-text-light;
+            @include respond-font($font-size-text);
+            
+        }
+        a{
+            //text-decoration: none;
+            display: inline-block;   
+        }
+    }
+}
+
+#team__fonticon--1{
+    width: 100%;
+    margin: 0;
+    color: $color-primary-dark;
+    
+    &, &::before, &::after{
+        font-size: 4rem !important; 
+        font-weight: 800;
+    }
+}

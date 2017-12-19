@@ -2,10 +2,18 @@
     width: 100%;
     padding: 3rem;
 
+    @include respond(tab-port){
+        padding: 1rem;
+    }
+
     @include CentralizeX();
 
     &__box{
         height: 50rem;
+        @include respond(tab-port){
+            height: 44rem;
+        }
+
         text-align: center;
         border-radius: 1rem;
         box-shadow: 6px 6px rgba($color-black, .2);
