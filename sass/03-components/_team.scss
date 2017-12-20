@@ -1,14 +1,19 @@
 .team{
     width: 100%;
-    padding: 8rem;
+    padding: 8rem 0;
 
     &__person{
+        padding-top: 2rem;
+        @include respond(tab-port){
+            padding-top: 5rem;
+        }
 
         &__picture{
             @include respond-height(30rem);
             width: 50%;
             background-position: top right;
             background-repeat: no-repeat;
+            background-size: cover;
             position: relative;
             text-align: center;
             transition: all .2s;
@@ -16,6 +21,11 @@
 
             @include respond(tab-port){
                 background-position: top;
+                width: 30%;
+            }
+            @include respond(phone){
+                background-position: top;
+                width: 25%;
             }
 
             &--1{
@@ -64,11 +74,17 @@
         }
 
         &__text{
-            //width: 40rem;
-            @include respond-width(40rem);
-            @include respond-height(32rem);
+            width: 40rem;
+            height: 32rem;
 
-            @include respond(tab-port){width: 50rem;}
+            @include respond(tab-port){
+                width: 46rem;
+                height: 26rem;
+            }
+            @include respond(phone){
+                width: 34rem;
+                height: 30rem;
+            }
 
             position: absolute;
             -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
@@ -105,8 +121,12 @@
 
     &__list{
         list-style: none;        
-        @include respond-width(32rem);
-        @include respond(tab-port){width: 43rem;}
+        @include respond(tab-port){
+            width: 38rem;
+        }
+        @include respond(phone){
+            width: 28rem;
+        }
 
         &__item{
             padding: 1rem;
@@ -118,7 +138,6 @@
             
         }
         a{
-            //text-decoration: none;
             display: inline-block;   
         }
     }
