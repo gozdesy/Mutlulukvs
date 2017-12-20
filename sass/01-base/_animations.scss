@@ -98,7 +98,13 @@
 
 @keyframes MoveDown-1 {
     0%{
-        transform: translateY(-80rem);
+        transform: translateY(-340rem);
+        @include respond(tab-land){
+            transform: translateY(-440rem);
+        }
+        @include respond(tab-port){
+            transform: translateY(-3140rem);
+        }
     }
     100%{
         transform: translate(0);
@@ -107,7 +113,13 @@
 
 @keyframes MoveDown-2 {
     0%{
-        transform: translateY(-65rem);
+        transform: translateY(-315rem);
+        @include respond(tab-land){
+            transform: translateY(-415rem);
+        }
+        @include respond(tab-port){
+            transform: translateY(-3115rem);
+        }
     }
     100%{
         transform: translate(0);
@@ -116,7 +128,13 @@
 
 @keyframes MoveDown-3 {
     0%{
-        transform: translateY(-50rem);
+        transform: translateY(-100rem);
+        @include respond(tab-land){
+            transform: translateY(-400rem);
+        }
+        @include respond(tab-port){
+            transform: translateY(-3000rem);
+        }
     }
     100%{
         transform: translate(0);

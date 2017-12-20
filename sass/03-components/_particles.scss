@@ -4,19 +4,17 @@
     height: 100%;
 
     &__item{
-        width: 2rem;
-        height: 2rem;
+        width: 2.2rem;
+        height: 2.2rem;
 
         position: absolute;
-        z-index: 1600;
-
+        z-index: -2000;
         border-radius: 100rem;
 
-        animation-duration: 6s;
+        animation-duration: 40s;
         animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.76,.42,.5,.78);
         backface-visibility: hidden;
-
-        box-shadow: .2rem .2rem rgba($color-primary-dark, .5);
         
         //particle types
         //--------------------------------------------
@@ -135,26 +133,42 @@
         //--------------------------------------------
         &--anim1{
             animation-name: MoveDown-1;
-            animation-timing-function: ease-out;
-            animation-delay: 5s;
         }
         &--anim2{
-            animation-name: MoveDown-2;
-            animation-timing-function: ease-in;
+            animation-name: MoveDown-1;
+            animation-delay: 3s;
         }
         &--anim3{
-            animation-name: MoveDown-3;
-            animation-timing-function: ease-in-out;
-            animation-delay: 4s;
+            animation-name: MoveDown-1;
+            animation-delay: 6s;
         }
         &--anim4{
             animation-name: MoveDown-1;
-            animation-timing-function: ease;
+            animation-delay: 9s;
         }
         &--anim5{
-            animation-name: MoveDown-3;
-            animation-timing-function: ease-out;
-            animation-delay: 3s;
+            animation-name: MoveDown-1;
+            animation-delay: 12s;
+        }
+        &--anim6{
+            animation-name: MoveDown-1;
+            animation-delay: 15s;
+        }
+        &--anim7{
+            animation-name: MoveDown-1;
+            animation-delay: 18s;
+        }
+        &--anim8{
+            animation-name: MoveDown-1;
+            animation-delay: 21s;
+        }
+        &--anim9{
+            animation-name: MoveDown-1;
+            animation-delay: 24s;
+        }
+        &--anim10{
+            animation-name: MoveDown-1;
+            animation-delay: 27s;
         }
     }
 }

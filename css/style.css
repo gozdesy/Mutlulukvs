@@ -274,19 +274,31 @@ body {
 
 @keyframes MoveDown-1 {
   0% {
-    transform: translateY(-80rem); }
+    transform: translateY(-340rem);
+    @media only screen and (max-width: 75em) {
+      transform: translateY(-440rem); }
+    @media only screen and (max-width: 56.25em) {
+      transform: translateY(-3140rem); } }
   100% {
     transform: translate(0); } }
 
 @keyframes MoveDown-2 {
   0% {
-    transform: translateY(-65rem); }
+    transform: translateY(-315rem);
+    @media only screen and (max-width: 75em) {
+      transform: translateY(-415rem); }
+    @media only screen and (max-width: 56.25em) {
+      transform: translateY(-3115rem); } }
   100% {
     transform: translate(0); } }
 
 @keyframes MoveDown-3 {
   0% {
-    transform: translateY(-50rem); }
+    transform: translateY(-100rem);
+    @media only screen and (max-width: 75em) {
+      transform: translateY(-400rem); }
+    @media only screen and (max-width: 56.25em) {
+      transform: translateY(-3000rem); } }
   100% {
     transform: translate(0); } }
 
@@ -305,6 +317,156 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 1rem; }
+
+.navigation__button {
+  display: block;
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 9999;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
+
+.navigation__close {
+  font-size: 6rem;
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  text-decoration: none;
+  color: #414141;
+  z-index: 10000;
+  display: none; }
+  @media only screen and (max-width: 75em) {
+    .navigation__close {
+      font-size: 5.76rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__close {
+      font-size: 5.4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__close {
+      font-size: 5.04rem; } }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#84B1ED, #4b6688);
+  z-index: 8888;
+  transition: transform 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  transform: scale(0); }
+  .navigation__background:target {
+    transform: scale(80); }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
+
+.navigation__background:target ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+  display: block; }
+
+.navigation__background:target ~ .navigation__button {
+  display: none; }
+
+.navigation__background:target ~ .navigation__close {
+  display: block; }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  width: 0;
+  display: none;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all .4s; }
+  @media only screen and (max-width: 75em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2.88rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2.7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2.52rem; } }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #84B1ED;
+  transform: translateX(1rem); }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #414141;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
 
 .footer {
   width: 100%;
@@ -546,15 +708,15 @@ body {
   width: 100%;
   height: 100%; }
   .particles__item {
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     position: absolute;
-    z-index: 1600;
+    z-index: -2000;
     border-radius: 100rem;
-    animation-duration: 6s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
-    backface-visibility: hidden;
-    box-shadow: 0.2rem 0.2rem rgba(75, 102, 136, 0.5); }
+    animation-timing-function: cubic-bezier(0.76, 0.42, 0.5, 0.78);
+    backface-visibility: hidden; }
     .particles__item--1 {
       background-color: #84B1ED;
       bottom: -8rem; }
@@ -633,23 +795,34 @@ body {
       .particles__item--11--pos2 {
         left: 98%; }
     .particles__item--anim1 {
-      animation-name: MoveDown-1;
-      animation-timing-function: ease-out;
-      animation-delay: 5s; }
+      animation-name: MoveDown-1; }
     .particles__item--anim2 {
-      animation-name: MoveDown-2;
-      animation-timing-function: ease-in; }
+      animation-name: MoveDown-1;
+      animation-delay: 3s; }
     .particles__item--anim3 {
-      animation-name: MoveDown-3;
-      animation-timing-function: ease-in-out;
-      animation-delay: 4s; }
+      animation-name: MoveDown-1;
+      animation-delay: 6s; }
     .particles__item--anim4 {
       animation-name: MoveDown-1;
-      animation-timing-function: ease; }
+      animation-delay: 9s; }
     .particles__item--anim5 {
-      animation-name: MoveDown-3;
-      animation-timing-function: ease-out;
-      animation-delay: 3s; }
+      animation-name: MoveDown-1;
+      animation-delay: 12s; }
+    .particles__item--anim6 {
+      animation-name: MoveDown-1;
+      animation-delay: 15s; }
+    .particles__item--anim7 {
+      animation-name: MoveDown-1;
+      animation-delay: 18s; }
+    .particles__item--anim8 {
+      animation-name: MoveDown-1;
+      animation-delay: 21s; }
+    .particles__item--anim9 {
+      animation-name: MoveDown-1;
+      animation-delay: 24s; }
+    .particles__item--anim10 {
+      animation-name: MoveDown-1;
+      animation-delay: 27s; }
 
 .courses {
   width: 100%;
@@ -666,6 +839,7 @@ body {
     border-radius: 1rem;
     box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
     position: relative;
+    z-index: 2000;
     transition: all .2s; }
     @media only screen and (max-width: 56.25em) {
       .courses__box {
@@ -886,8 +1060,8 @@ body {
       width: 40rem;
       height: 32rem;
       position: absolute;
-      -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
       clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+      -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
       z-index: 1000;
       left: 84%;
       padding: 3rem;
@@ -990,16 +1164,22 @@ body {
 
 .section-team {
   width: 100%;
-  padding: 6rem; }
+  padding: 12rem;
+  margin-top: -10rem;
+  background-image: radial-gradient(#e6e6e6, #fdfdfd);
+  border-radius: 100rem; }
   @media only screen and (max-width: 56.25em) {
     .section-team {
-      padding: 2rem; } }
+      padding: 2rem;
+      margin-top: 0;
+      background-image: none;
+      border-radius: 0; } }
 
 .section-gallery {
   width: 100%;
   height: 80rem;
-  padding: 6rem;
+  padding: 4rem;
   position: relative; }
   @media only screen and (max-width: 56.25em) {
     .section-gallery {
-      padding: 2rem; } }
+      padding: 1rem; } }
