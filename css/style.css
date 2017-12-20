@@ -84,7 +84,7 @@ body {
   font-weight: 1000;
   letter-spacing: 1rem;
   backface-visibility: hidden;
-  width: 50rem;
+  max-width: 50rem;
   margin: auto;
   display: block;
   animation-name: MoveInRight;
