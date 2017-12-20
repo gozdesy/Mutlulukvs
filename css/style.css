@@ -84,7 +84,7 @@ body {
   font-weight: 1000;
   letter-spacing: 1rem;
   backface-visibility: hidden;
-  max-width: 50rem;
+  width: 50rem;
   margin: auto;
   display: block;
   animation-name: MoveInRight;
@@ -99,6 +99,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-sub {
       font-size: 2.52rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-sub {
+      width: 35rem; } }
 
 .heading-secondary {
   font-size: 3rem;

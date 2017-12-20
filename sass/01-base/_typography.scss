@@ -29,9 +29,13 @@ body{
     font-weight: 1000;
     letter-spacing: 1rem;
     backface-visibility: hidden;
-    max-width: 50rem;
+    width: 50rem;
     margin: auto;
     display: block;
+
+    @include respond(phone){
+        width: 35rem;
+    }
 
     animation-name: MoveInRight;
     animation-duration: 2.5s;
