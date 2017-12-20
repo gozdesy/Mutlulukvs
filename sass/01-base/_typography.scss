@@ -82,6 +82,7 @@ body{
         @include respond-font($font-size-text);
         color: $color-text-dark;
         padding: 1rem 1rem;
+        //margin-bottom: 1rem;
         text-align: center;
         line-height: 1.5;
 

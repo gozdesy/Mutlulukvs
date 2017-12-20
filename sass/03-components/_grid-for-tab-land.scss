@@ -1,15 +1,15 @@
-.row{
+.row-for-tab-land{
     max-width: 118rem;
     margin: 0 auto;
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
-        @include respond(tab-port){
+        @include respond(tab-land){
             margin-bottom: $gutter-vertical-small;
         }
     }
 
-    @include respond(tab-port){
-        max-width: 54rem;
+    @include respond(tab-land){
+        max-width: 68rem;
     }
 
     @include clearfix();
@@ -19,7 +19,7 @@
         &:not(:last-child){
             margin-right: $gutter-horizontal;
         } 
-        @include respond(tab-port){
+        @include respond(tab-land){
             width: 100% !important;
             margin-right: 0;
             &:not(:last-child){
@@ -52,14 +52,14 @@
     // ----------------------------------------------------------------------------------------------
     .col-1-of-4-respond{
         width: calc((100% - 3 * #{$gutter-horizontal})/4);
-        @include respond(tab-port){
+        @include respond(tab-land){
             display: none;
         }
     }
     
     .col-3-of-4-respond{
         width: calc(3 * ((100% - 3 * #{$gutter-horizontal})/4) + 2 * #{$gutter-horizontal});
-        @include respond(tab-port){
+        @include respond(tab-land){
             width: 100%;
         }
     }

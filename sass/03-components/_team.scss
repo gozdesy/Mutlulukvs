@@ -1,13 +1,17 @@
 .team{
     width: 100%;
     padding: 8rem 0;
+    @include respond(tab-land){
+        padding: 3rem;
+        padding-top: 0;
+    }
 
     &__person{
         padding-top: 2rem;
-        @include respond(tab-port){
-            padding-top: 5rem;
+        @include respond(tab-land){
+            padding-top: 8rem;
         }
-
+        
         &__picture{
             @include respond-height(30rem);
             width: 50%;
@@ -19,6 +23,10 @@
             transition: all .2s;
             backface-visibility: hidden;
 
+            @include respond(tab-land){
+                background-position: top;
+                width: 42%;
+            }
             @include respond(tab-port){
                 background-position: top;
                 width: 30%;
@@ -103,7 +111,7 @@
             &--primary--down{
                 top:10%;
                 background-image: linear-gradient($color-primary, $color-primary-dark);
-                @include respond(tab-port){top:-10%;}
+                @include respond(tab-land){top:-10%;}
             }
 
             &--secondary--up{
@@ -114,7 +122,7 @@
             &--secondary--down{
                 top: 10%;
                 background-image: linear-gradient($color-secondary, $color-secondary-dark);
-                @include respond(tab-port){top:-10%;}
+                @include respond(tab-land){top:-10%;}
             }
         }
     }

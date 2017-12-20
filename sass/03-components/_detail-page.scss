@@ -3,13 +3,22 @@
     width: 95vw;
     height: 95vh;
     top: 2.5%;
-    right: 2.5%;
-    z-index: 1500;
+    left: 2.5%;
+    z-index: 9999;
     padding: 2rem;
     border-radius: 4rem;
     transform: scale(0);
     transition: all .5s;
-    overflow-y: auto;
+    overflow: hidden;
+
+    @include respond(tab-port){
+        width: 97vw;
+        height: 97vh;
+        top: .5%;
+        left: .5%;
+        padding-top: 1rem;
+        padding:.5rem;
+    }
 
     &--1{background-color: rgba($color-primary, .95);}
     &--2{background-color: rgba($color-secondary, .95);}
@@ -37,16 +46,14 @@
     &__text{
         @include respond-font($font-size-text);
         width: 100%;
+        padding-top: 10rem;
         padding: 1rem;
         color: $color-text-dark;
         text-align: left;
-
-        ol{
+        overflow-y: auto;
+       
+        @include respond(tab-port){
             padding: 2rem;
-        }
-
-        li{
-            padding: 1rem;
         }
     }
 
