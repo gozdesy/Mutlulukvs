@@ -3,6 +3,7 @@
     height: 100vh;
     padding: 20rem;
     position: relative;
+    //background-image: linear-gradient(to bottom, transparent 80%, rgba($color-white, .5) 10%, rgba($color-white, .8) 10%), url(../img/img-002.jpeg);
     background-image: url(../img/img-002.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@
     color: $color-text-dark;
     position: relative;
     height: 70rem;
+
     @include respond(tab-port){
         height: 200rem;
         padding: 2rem;

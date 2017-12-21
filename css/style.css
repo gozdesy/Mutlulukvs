@@ -320,7 +320,7 @@ body {
 
 .navigation__button {
   display: block;
-  background-color: #fff;
+  background-color: #b7cfee;
   height: 7rem;
   width: 7rem;
   position: fixed;
@@ -347,7 +347,7 @@ body {
   top: 2%;
   right: 5%;
   text-decoration: none;
-  color: #414141;
+  color: #fff;
   z-index: 10000;
   display: none; }
   @media only screen and (max-width: 75em) {
@@ -367,7 +367,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#84B1ED, #4b6688);
+  background-image: linear-gradient(to right, #84B1ED, #4b6688);
   z-index: 8888;
   transition: transform 0.2s cubic-bezier(0.86, 0, 0.07, 1);
   transform: scale(0); }

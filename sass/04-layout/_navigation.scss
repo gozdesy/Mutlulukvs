@@ -1,7 +1,7 @@
 .navigation {
     &__button {
         display: block;
-        background-color: $color-white;
+        background-color: $color-primary-light;
         height: 7rem;
         width: 7rem;
         position: fixed;
@@ -31,7 +31,7 @@
         top: 2%;
         right: 5%;
         text-decoration: none;
-        color: $color-text-dark;
+        color: $color-white;
         z-index: 10000;
         display: none;
     }
@@ -43,7 +43,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary, $color-primary-dark);
+        background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
         z-index: 8888;
         transition: transform .2s cubic-bezier(0.86, 0, 0.07, 1);
         transform: scale(0);
