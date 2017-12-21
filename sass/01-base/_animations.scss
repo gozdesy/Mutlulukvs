@@ -96,47 +96,66 @@
     }
 }
 
-@keyframes MoveDown-1 {
+@mixin ParticleMoveDownAnimation($init-pos-x, $init-pos-y){
     0%{
-        transform: translateY(-340rem);
-        @include respond(tab-land){
-            transform: translateY(-440rem);
-        }
-        @include respond(tab-port){
-            transform: translateY(-3140rem);
-        }
+        transform: translateY($init-pos-y);
+    }
+    10%{
+        transform: translate($init-pos-x * 3,  $init-pos-y * 0.9);
+    }
+    20%{
+        transform: translate($init-pos-x * -2, $init-pos-y * 0.8);
+    }
+    30%{
+        transform: translate($init-pos-x * 2, $init-pos-y * 0.7);
+    }
+    40%{
+        transform: translate($init-pos-x * -1, $init-pos-y * 0.6);
+    }
+    50%{
+        transform: translate($init-pos-x * 3, $init-pos-y * 0.5);
+    }
+    60%{
+        transform: translate($init-pos-x * -2, $init-pos-y * 0.4);
+    }
+    70%{
+        transform: translate($init-pos-x * 1, $init-pos-y * 0.3);
+    }
+    80%{
+        transform: translate($init-pos-x * -3, $init-pos-y * 0.2);
+    }
+    90%{
+        transform: translate($init-pos-x * 2, $init-pos-y * 0.1);
     }
     100%{
         transform: translate(0);
     }
 }
 
-@keyframes MoveDown-2 {
-    0%{
-        transform: translateY(-315rem);
-        @include respond(tab-land){
-            transform: translateY(-415rem);
-        }
-        @include respond(tab-port){
-            transform: translateY(-3115rem);
-        }
-    }
-    100%{
-        transform: translate(0);
-    }
+@keyframes ParticleMoveDownAnimation {
+    $x: 1rem;
+    $y: -300rem;
+    
+    @include ParticleMoveDownAnimation($x, $y);
 }
 
-@keyframes MoveDown-3 {
-    0%{
-        transform: translateY(-100rem);
-        @include respond(tab-land){
-            transform: translateY(-400rem);
-        }
-        @include respond(tab-port){
-            transform: translateY(-3000rem);
-        }
-    }
-    100%{
-        transform: translate(0);
-    }
+@keyframes ParticleMoveDownAnimation-tab-land {
+    $x: 1rem;
+    $y: -500rem;
+    
+    @include ParticleMoveDownAnimation($x, $y);
+}
+
+@keyframes ParticleMoveDownAnimation-tab-port {
+    $x: 1rem;
+    $y: -600rem;
+    
+    @include ParticleMoveDownAnimation($x, $y);
+}
+
+@keyframes ParticleMoveDownAnimation-phone {
+    $x: 1rem;
+    $y: -500rem;
+    
+    @include ParticleMoveDownAnimation($x, $y);
 }

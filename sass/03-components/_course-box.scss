@@ -2,6 +2,8 @@
     width: 100%;
     padding: 6rem;
 
+    z-index: 2000;
+
     @include respond(tab-port){
         padding: 1rem;
     }

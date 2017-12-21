@@ -272,33 +272,99 @@ body {
     opacity: 1;
     font-size: 9rem; } }
 
-@keyframes MoveDown-1 {
+@keyframes ParticleMoveDownAnimation {
   0% {
-    transform: translateY(-340rem);
-    @media only screen and (max-width: 75em) {
-      transform: translateY(-440rem); }
-    @media only screen and (max-width: 56.25em) {
-      transform: translateY(-3140rem); } }
+    transform: translateY(-300rem); }
+  10% {
+    transform: translate(3rem, -270rem); }
+  20% {
+    transform: translate(-2rem, -240rem); }
+  30% {
+    transform: translate(2rem, -210rem); }
+  40% {
+    transform: translate(-1rem, -180rem); }
+  50% {
+    transform: translate(3rem, -150rem); }
+  60% {
+    transform: translate(-2rem, -120rem); }
+  70% {
+    transform: translate(1rem, -90rem); }
+  80% {
+    transform: translate(-3rem, -60rem); }
+  90% {
+    transform: translate(2rem, -30rem); }
   100% {
     transform: translate(0); } }
 
-@keyframes MoveDown-2 {
+@keyframes ParticleMoveDownAnimation-tab-land {
   0% {
-    transform: translateY(-315rem);
-    @media only screen and (max-width: 75em) {
-      transform: translateY(-415rem); }
-    @media only screen and (max-width: 56.25em) {
-      transform: translateY(-3115rem); } }
+    transform: translateY(-500rem); }
+  10% {
+    transform: translate(3rem, -450rem); }
+  20% {
+    transform: translate(-2rem, -400rem); }
+  30% {
+    transform: translate(2rem, -350rem); }
+  40% {
+    transform: translate(-1rem, -300rem); }
+  50% {
+    transform: translate(3rem, -250rem); }
+  60% {
+    transform: translate(-2rem, -200rem); }
+  70% {
+    transform: translate(1rem, -150rem); }
+  80% {
+    transform: translate(-3rem, -100rem); }
+  90% {
+    transform: translate(2rem, -50rem); }
   100% {
     transform: translate(0); } }
 
-@keyframes MoveDown-3 {
+@keyframes ParticleMoveDownAnimation-tab-port {
   0% {
-    transform: translateY(-100rem);
-    @media only screen and (max-width: 75em) {
-      transform: translateY(-400rem); }
-    @media only screen and (max-width: 56.25em) {
-      transform: translateY(-3000rem); } }
+    transform: translateY(-600rem); }
+  10% {
+    transform: translate(3rem, -540rem); }
+  20% {
+    transform: translate(-2rem, -480rem); }
+  30% {
+    transform: translate(2rem, -420rem); }
+  40% {
+    transform: translate(-1rem, -360rem); }
+  50% {
+    transform: translate(3rem, -300rem); }
+  60% {
+    transform: translate(-2rem, -240rem); }
+  70% {
+    transform: translate(1rem, -180rem); }
+  80% {
+    transform: translate(-3rem, -120rem); }
+  90% {
+    transform: translate(2rem, -60rem); }
+  100% {
+    transform: translate(0); } }
+
+@keyframes ParticleMoveDownAnimation-phone {
+  0% {
+    transform: translateY(-500rem); }
+  10% {
+    transform: translate(3rem, -450rem); }
+  20% {
+    transform: translate(-2rem, -400rem); }
+  30% {
+    transform: translate(2rem, -350rem); }
+  40% {
+    transform: translate(-1rem, -300rem); }
+  50% {
+    transform: translate(3rem, -250rem); }
+  60% {
+    transform: translate(-2rem, -200rem); }
+  70% {
+    transform: translate(1rem, -150rem); }
+  80% {
+    transform: translate(-3rem, -100rem); }
+  90% {
+    transform: translate(2rem, -50rem); }
   100% {
     transform: translate(0); } }
 
@@ -367,12 +433,12 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: linear-gradient(to right, #84B1ED, #4b6688);
+  background-image: radial-gradient(#b7cfee 1%, #4b6688);
   z-index: 8888;
   transition: transform 0.2s cubic-bezier(0.86, 0, 0.07, 1);
   transform: scale(0); }
   .navigation__background:target {
-    transform: scale(80); }
+    transform: scale(50); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
@@ -713,120 +779,162 @@ body {
     position: absolute;
     z-index: -2000;
     border-radius: 100rem;
-    animation-duration: 40s;
+    animation-name: ParticleMoveDownAnimation;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.76, 0.42, 0.5, 0.78);
+    animation-timing-function: linear;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 75em) {
+      .particles__item {
+        animation-name: ParticleMoveDownAnimation-tab-land;
+        animation-duration: 72s;
+        width: 1.9rem;
+        height: 1.9rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .particles__item {
+        animation-name: ParticleMoveDownAnimation-tab-port;
+        animation-duration: 90s;
+        width: 1.9rem;
+        height: 1.9rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .particles__item {
+        animation-name: ParticleMoveDownAnimation-phone;
+        animation-duration: 72s;
+        width: 1.5rem;
+        height: 1.5rem; } }
     .particles__item--1 {
-      background-color: #84B1ED;
       bottom: -8rem; }
       .particles__item--1--pos1 {
+        background-color: #84B1ED;
         left: 5%; }
       .particles__item--1--pos2 {
+        background-color: #EE7785;
         left: 7%; }
     .particles__item--2 {
-      background-color: #EE7785;
       bottom: 0; }
       .particles__item--2--pos1 {
+        background-color: #EE7785;
         left: 12%; }
       .particles__item--2--pos2 {
+        background-color: #C89EC4;
         left: 10%; }
     .particles__item--3 {
-      background-color: #C89EC4;
       bottom: -5rem; }
       .particles__item--3--pos1 {
+        background-color: #C89EC4;
         left: 21%; }
       .particles__item--3--pos2 {
+        background-color: #67D5B5;
         left: 23%; }
     .particles__item--4 {
-      background-color: #84B1ED;
       bottom: -10rem; }
       .particles__item--4--pos1 {
+        background-color: #84B1ED;
         left: 30%; }
       .particles__item--4--pos2 {
+        background-color: #EE7785;
         left: 33%; }
     .particles__item--5 {
-      background-color: #67D5B5;
       bottom: 0; }
       .particles__item--5--pos1 {
+        background-color: #C89EC4;
         left: 42%; }
       .particles__item--5--pos2 {
+        background-color: #EE7785;
         left: 39%; }
     .particles__item--6 {
-      background-color: #84B1ED;
       bottom: -10rem; }
       .particles__item--6--pos1 {
+        background-color: #84B1ED;
         left: 55%; }
       .particles__item--6--pos2 {
+        background-color: #67D5B5;
         left: 59%; }
     .particles__item--7 {
-      background-color: #C89EC4;
       bottom: 0; }
       .particles__item--7--pos1 {
+        background-color: #C89EC4;
         left: 62%; }
       .particles__item--7--pos2 {
+        background-color: #EE7785;
         left: 66%; }
     .particles__item--8 {
-      background-color: #67D5B5;
       bottom: -10rem; }
       .particles__item--8--pos1 {
-        left: 75%; }
+        left: 75%;
+        background-color: #67D5B5; }
       .particles__item--8--pos2 {
+        background-color: #84B1ED;
         left: 73%; }
     .particles__item--9 {
-      background-color: #EE7785;
       bottom: 0; }
       .particles__item--9--pos1 {
+        background-color: #EE7785;
         left: 82%; }
       .particles__item--9--pos2 {
+        background-color: #C89EC4;
         left: 84%; }
     .particles__item--10 {
-      background-color: #67D5B5;
       bottom: -10rem; }
       .particles__item--10--pos1 {
+        background-color: #67D5B5;
         left: 90%; }
       .particles__item--10--pos2 {
+        background-color: #84B1ED;
         left: 88%; }
     .particles__item--11 {
-      background-color: #EE7785;
       bottom: -11rem; }
       .particles__item--11--pos1 {
-        left: 96%; }
+        left: 96%;
+        background-color: #EE7785; }
       .particles__item--11--pos2 {
+        background-color: #C89EC4;
         left: 98%; }
     .particles__item--anim1 {
-      animation-name: MoveDown-1; }
+      animation-delay: -54s; }
     .particles__item--anim2 {
-      animation-name: MoveDown-1;
-      animation-delay: 3s; }
+      animation-delay: -42s; }
     .particles__item--anim3 {
-      animation-name: MoveDown-1;
-      animation-delay: 6s; }
+      animation-delay: -30s; }
     .particles__item--anim4 {
-      animation-name: MoveDown-1;
-      animation-delay: 9s; }
+      animation-delay: -18s; }
     .particles__item--anim5 {
-      animation-name: MoveDown-1;
-      animation-delay: 12s; }
+      animation-delay: -6s; }
     .particles__item--anim6 {
-      animation-name: MoveDown-1;
-      animation-delay: 15s; }
+      animation-delay: 0s; }
     .particles__item--anim7 {
-      animation-name: MoveDown-1;
-      animation-delay: 18s; }
+      animation-delay: 6s; }
     .particles__item--anim8 {
-      animation-name: MoveDown-1;
-      animation-delay: 21s; }
+      animation-delay: 7.2s; }
     .particles__item--anim9 {
-      animation-name: MoveDown-1;
-      animation-delay: 24s; }
+      animation-delay: 8.4s; }
     .particles__item--anim10 {
-      animation-name: MoveDown-1;
-      animation-delay: 27s; }
+      animation-delay: 9.6s; }
+    .particles__item--anim11 {
+      animation-delay: -48s; }
+    .particles__item--anim12 {
+      animation-delay: -36s; }
+    .particles__item--anim13 {
+      animation-delay: -24s; }
+    .particles__item--anim14 {
+      animation-delay: -12s; }
+    .particles__item--anim15 {
+      animation-delay: 12s; }
+    .particles__item--anim16 {
+      animation-delay: 24s; }
+    .particles__item--anim17 {
+      animation-delay: 36s; }
+    .particles__item--anim18 {
+      animation-delay: 48s; }
+    .particles__item--anim19 {
+      animation-delay: 54s; }
+    .particles__item--anim20 {
+      animation-delay: 57s; }
 
 .courses {
   width: 100%;
   padding: 6rem;
+  z-index: 2000;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
