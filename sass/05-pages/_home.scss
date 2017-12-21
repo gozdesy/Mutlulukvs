@@ -40,7 +40,7 @@
     background-image: radial-gradient($color-grey-medium, $color-grey-light);
     border-radius: 100rem;
     @include respond(tab-port){
-        padding: 2rem;
+        padding: 2rem 1rem;
         margin-top: 0;
         background-image: none;
         border-radius: 0;

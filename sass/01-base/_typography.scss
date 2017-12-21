@@ -47,6 +47,8 @@ body{
     color: $color-primary; 
     padding: 2rem;
     text-align: center;
+    position: relative;
+    z-index: 2000;
 }
 
 .heading-tertiary{

@@ -2,7 +2,8 @@
     width: 100%;
     padding: 6rem;
 
-    z-index: 2000;
+    //background-color: green;
+    //z-index: 99999;
 
     @include respond(tab-port){
         padding: 1rem;
@@ -17,6 +18,7 @@
         }
 
         text-align: center;
+        background-color: $color-white;
         border-radius: 1rem;
         box-shadow: 6px 6px rgba($color-black, .2);
         position: relative;
