@@ -10,13 +10,11 @@
     &__link-container{
         width: 16rem;
         margin: auto;
+        z-index: -2;
     }
 
     &__link{
-        display: inline-block;
         text-decoration: none;
-        z-index: 1;
-        background-color: $color-grey-light;
     }
 
     &__picture{
@@ -33,7 +31,7 @@
         border-radius: .5rem;
         
         &:hover{
-            transform: skew(0);
+            transform: skew(0) scale(1.4);
             z-index: 2000;
         }
 

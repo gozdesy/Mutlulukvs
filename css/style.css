@@ -1247,12 +1247,10 @@ body {
   text-align: center; }
   .gallery__link-container {
     width: 16rem;
-    margin: auto; }
+    margin: auto;
+    z-index: -2; }
   .gallery__link {
-    display: inline-block;
-    text-decoration: none;
-    z-index: 1;
-    background-color: #fdfdfd; }
+    text-decoration: none; }
   .gallery__picture {
     width: 36rem;
     height: 27rem;
@@ -1264,7 +1262,7 @@ body {
     backface-visibility: hidden;
     border-radius: .5rem; }
     .gallery__picture:hover {
-      transform: skew(0);
+      transform: skew(0) scale(1.4);
       z-index: 2000; }
     .gallery__picture--1 {
       background-image: url("../img/gal-img-001.jpg");
