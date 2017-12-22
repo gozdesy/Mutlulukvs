@@ -1243,7 +1243,16 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
+  .gallery__link-container {
+    width: 16rem;
+    margin: auto; }
+  .gallery__link {
+    display: inline-block;
+    text-decoration: none;
+    z-index: 1;
+    background-color: #fdfdfd; }
   .gallery__picture {
     width: 36rem;
     height: 27rem;
@@ -1252,7 +1261,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     transition: all .2s;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: .5rem; }
     .gallery__picture:hover {
       transform: skew(0);
       z-index: 2000; }
@@ -1260,7 +1270,7 @@ body {
       background-image: url("../img/gal-img-001.jpg");
       border: 1rem solid #84B1ED;
       left: 10%;
-      top: 10%;
+      top: 5%;
       z-index: 1;
       transform: skew(5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1272,7 +1282,7 @@ body {
       background-image: url("../img/gal-img-002.jpg");
       border: 1rem solid #EE7785;
       left: 7%;
-      top: 35%;
+      top: 30%;
       z-index: 3;
       transform: skew(3deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1284,7 +1294,7 @@ body {
       background-image: url("../img/gal-img-003.jpg");
       border: 1rem solid #C89EC4;
       left: 30%;
-      top: 15%;
+      top: 10%;
       z-index: 2;
       transform: skew(-5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1296,7 +1306,7 @@ body {
       background-image: url("../img/gal-img-004.jpg");
       border: 1rem solid #67D5B5;
       left: 50%;
-      top: 10%;
+      top: 5%;
       z-index: 3;
       transform: skew(-5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1308,7 +1318,7 @@ body {
       background-image: url("../img/gal-img-005.jpg");
       border: 1rem solid #C89EC4;
       left: 30%;
-      top: 38%;
+      top: 33%;
       z-index: 3;
       transform: skew(-5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1320,7 +1330,7 @@ body {
       background-image: url("../img/gal-img-006.jpg");
       border: 1rem solid #EE7785;
       left: 60%;
-      top: 26%;
+      top: 21%;
       z-index: 3;
       transform: skew(-5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1332,7 +1342,7 @@ body {
       background-image: url("../img/gal-img-007.jpg");
       border: 1rem solid #84B1ED;
       left: 10%;
-      top: 60%;
+      top: 55%;
       z-index: 1;
       transform: skew(5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1344,7 +1354,7 @@ body {
       background-image: url("../img/gal-img-008.jpg");
       border: 1rem solid #EE7785;
       left: 55%;
-      top: 75%;
+      top: 70%;
       z-index: 3;
       transform: skew(-3deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1356,7 +1366,7 @@ body {
       background-image: url("../img/gal-img-009.jpg");
       border: 1rem solid #67D5B5;
       left: 30%;
-      top: 65%;
+      top: 60%;
       z-index: 2;
       transform: skew(-5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1368,7 +1378,7 @@ body {
       background-image: url("../img/gal-img-010.jpg");
       border: 1rem solid #C89EC4;
       left: 55%;
-      top: 50%;
+      top: 45%;
       z-index: 3;
       transform: skew(-5deg); }
       @media only screen and (max-width: 56.25em) {
@@ -1376,6 +1386,14 @@ body {
           position: static;
           margin: 1rem auto;
           transform: skew(0); } }
+
+#gallery__fonticon--1 {
+  width: 100%;
+  margin: 0;
+  color: #4b6688; }
+  #gallery__fonticon--1, #gallery__fonticon--1::before, #gallery__fonticon--1::after {
+    font-size: 4rem !important;
+    font-weight: 800; }
 
 .section-about {
   width: 100%;
@@ -1421,7 +1439,7 @@ body {
 
 .section-gallery {
   width: 100%;
-  height: 140rem;
+  height: 160rem;
   padding: 4rem;
   position: relative; }
   @media only screen and (max-width: 56.25em) {

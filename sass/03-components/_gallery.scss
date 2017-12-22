@@ -5,6 +5,19 @@
     height: 100%;
     position: relative;
     margin: auto;
+    text-align: center;
+
+    &__link-container{
+        width: 16rem;
+        margin: auto;
+    }
+
+    &__link{
+        display: inline-block;
+        text-decoration: none;
+        z-index: 1;
+        background-color: $color-grey-light;
+    }
 
     &__picture{
         width: 36rem;
@@ -16,6 +29,8 @@
 
         transition: all .2s;
         backface-visibility: hidden;
+
+        border-radius: .5rem;
         
         &:hover{
             transform: skew(0);
@@ -26,7 +41,7 @@
             background-image: url("../img/gal-img-001.jpg");
             border: 1rem solid $color-primary;
             left:10%;
-            top:10%;
+            top:5%;
             z-index: 1;
             transform: skew(5deg);
             @include respond(tab-port){
@@ -39,7 +54,7 @@
             background-image: url("../img/gal-img-002.jpg");
             border: 1rem solid $color-secondary;
             left: 7%;
-            top: 35%;
+            top: 30%;
             z-index: 3;
             transform: skew(3deg);
             @include respond(tab-port){
@@ -52,7 +67,7 @@
             background-image: url("../img/gal-img-003.jpg");
             border: 1rem solid $color-tertiary;
             left:30%;
-            top:15%;
+            top:10%;
             z-index: 2;
             transform: skew(-5deg);
             @include respond(tab-port){
@@ -65,7 +80,7 @@
             background-image: url("../img/gal-img-004.jpg");
             border: 1rem solid $color-quaternary;
             left:50%;
-            top:10%;
+            top:5%;
             z-index: 3;
             transform: skew(-5deg);
             @include respond(tab-port){
@@ -78,7 +93,7 @@
             background-image: url("../img/gal-img-005.jpg");
             border: 1rem solid $color-tertiary;
             left:30%;
-            top:38%;
+            top:33%;
             z-index: 3;
             transform: skew(-5deg);
             @include respond(tab-port){
@@ -91,7 +106,7 @@
             background-image: url("../img/gal-img-006.jpg");
             border: 1rem solid $color-secondary;
             left:60%;
-            top:26%;
+            top:21%;
             z-index: 3;
             transform: skew(-5deg);
             @include respond(tab-port){
@@ -105,7 +120,7 @@
             background-image: url("../img/gal-img-007.jpg");
             border: 1rem solid $color-primary;
             left:10%;
-            top:60%;
+            top:55%;
             z-index: 1;
             transform: skew(5deg);
             @include respond(tab-port){
@@ -118,7 +133,7 @@
             background-image: url("../img/gal-img-008.jpg");
             border: 1rem solid $color-secondary;
             left: 55%;
-            top: 75%;
+            top: 70%;
             z-index: 3;
             transform: skew(-3deg);
             @include respond(tab-port){
@@ -131,7 +146,7 @@
             background-image: url("../img/gal-img-009.jpg");
             border: 1rem solid $color-quaternary;
             left:30%;
-            top:65%;
+            top:60%;
             z-index: 2;
             transform: skew(-5deg);
             @include respond(tab-port){
@@ -144,7 +159,7 @@
             background-image: url("../img/gal-img-010.jpg");
             border: 1rem solid $color-tertiary;
             left:55%;
-            top:50%;
+            top:45%;
             z-index: 3;
             transform: skew(-5deg);
             @include respond(tab-port){
@@ -154,5 +169,16 @@
             }
         }
         
+    }
+}
+
+#gallery__fonticon--1{
+    width: 100%;
+    margin: 0;
+    color: $color-primary-dark;
+    
+    &, &::before, &::after{
+        font-size: 4rem !important; 
+        font-weight: 800;
     }
 }
