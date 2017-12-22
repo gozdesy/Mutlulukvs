@@ -1249,10 +1249,10 @@ body {
   height: 100vh;
   padding: 20rem;
   position: relative;
-  background-image: url(../img/img-002.jpeg);
+  background-image: url(../img/img-002.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: top; }
   .section-about .about-text {
     position: absolute;
     top: 50%;

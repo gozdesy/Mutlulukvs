@@ -3,11 +3,11 @@
     height: 100vh;
     padding: 20rem;
     position: relative;
-    //background-image: linear-gradient(to bottom, transparent 80%, rgba($color-white, .5) 10%, rgba($color-white, .8) 10%), url(../img/img-002.jpeg);
-    background-image: url(../img/img-002.jpeg);
+    //background-image: url(../img/img-002.jpeg);
+    background-image: url(../img/img-002.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 
     .about-text{
         position: absolute;
