@@ -201,6 +201,11 @@ body {
   font-size: 2.8rem;
   font-weight: 800; }
 
+.handwriting-smaller {
+  font-family: "Parisienne", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800; }
+
 @keyframes MoveInRight {
   0% {
     opacity: 0;
@@ -276,97 +281,97 @@ body {
 
 @keyframes ParticleMoveDownAnimation {
   0% {
-    transform: translateY(-300rem); }
+    transform: translateY(-460rem); }
   10% {
-    transform: translate(3rem, -270rem); }
+    transform: translate(5rem, -414rem); }
   20% {
-    transform: translate(-2rem, -240rem); }
+    transform: translate(-2rem, -368rem); }
   30% {
-    transform: translate(2rem, -210rem); }
+    transform: translate(4rem, -322rem); }
   40% {
-    transform: translate(-1rem, -180rem); }
+    transform: translate(-3rem, -276rem); }
   50% {
-    transform: translate(3rem, -150rem); }
+    transform: translate(5rem, -230rem); }
   60% {
-    transform: translate(-2rem, -120rem); }
+    transform: translate(-4rem, -184rem); }
   70% {
-    transform: translate(1rem, -90rem); }
+    transform: translate(4rem, -138rem); }
   80% {
-    transform: translate(-3rem, -60rem); }
+    transform: translate(-3rem, -92rem); }
   90% {
-    transform: translate(2rem, -30rem); }
+    transform: translate(5rem, -46rem); }
   100% {
     transform: translate(0); } }
 
 @keyframes ParticleMoveDownAnimation-tab-land {
   0% {
-    transform: translateY(-500rem); }
+    transform: translateY(-800rem); }
   10% {
-    transform: translate(3rem, -450rem); }
+    transform: translate(5rem, -720rem); }
   20% {
-    transform: translate(-2rem, -400rem); }
+    transform: translate(-2rem, -640rem); }
   30% {
-    transform: translate(2rem, -350rem); }
+    transform: translate(4rem, -560rem); }
   40% {
-    transform: translate(-1rem, -300rem); }
+    transform: translate(-3rem, -480rem); }
   50% {
-    transform: translate(3rem, -250rem); }
+    transform: translate(5rem, -400rem); }
   60% {
-    transform: translate(-2rem, -200rem); }
+    transform: translate(-4rem, -320rem); }
   70% {
-    transform: translate(1rem, -150rem); }
+    transform: translate(4rem, -240rem); }
   80% {
-    transform: translate(-3rem, -100rem); }
+    transform: translate(-3rem, -160rem); }
   90% {
-    transform: translate(2rem, -50rem); }
+    transform: translate(5rem, -80rem); }
   100% {
     transform: translate(0); } }
 
 @keyframes ParticleMoveDownAnimation-tab-port {
   0% {
-    transform: translateY(-600rem); }
+    transform: translateY(-900rem); }
   10% {
-    transform: translate(3rem, -540rem); }
+    transform: translate(5rem, -810rem); }
   20% {
-    transform: translate(-2rem, -480rem); }
+    transform: translate(-2rem, -720rem); }
   30% {
-    transform: translate(2rem, -420rem); }
+    transform: translate(4rem, -630rem); }
   40% {
-    transform: translate(-1rem, -360rem); }
+    transform: translate(-3rem, -540rem); }
   50% {
-    transform: translate(3rem, -300rem); }
+    transform: translate(5rem, -450rem); }
   60% {
-    transform: translate(-2rem, -240rem); }
+    transform: translate(-4rem, -360rem); }
   70% {
-    transform: translate(1rem, -180rem); }
+    transform: translate(4rem, -270rem); }
   80% {
-    transform: translate(-3rem, -120rem); }
+    transform: translate(-3rem, -180rem); }
   90% {
-    transform: translate(2rem, -60rem); }
+    transform: translate(5rem, -90rem); }
   100% {
     transform: translate(0); } }
 
 @keyframes ParticleMoveDownAnimation-phone {
   0% {
-    transform: translateY(-500rem); }
+    transform: translateY(-800rem); }
   10% {
-    transform: translate(3rem, -450rem); }
+    transform: translate(5rem, -720rem); }
   20% {
-    transform: translate(-2rem, -400rem); }
+    transform: translate(-2rem, -640rem); }
   30% {
-    transform: translate(2rem, -350rem); }
+    transform: translate(4rem, -560rem); }
   40% {
-    transform: translate(-1rem, -300rem); }
+    transform: translate(-3rem, -480rem); }
   50% {
-    transform: translate(3rem, -250rem); }
+    transform: translate(5rem, -400rem); }
   60% {
-    transform: translate(-2rem, -200rem); }
+    transform: translate(-4rem, -320rem); }
   70% {
-    transform: translate(1rem, -150rem); }
+    transform: translate(4rem, -240rem); }
   80% {
-    transform: translate(-3rem, -100rem); }
+    transform: translate(-3rem, -160rem); }
   90% {
-    transform: translate(2rem, -50rem); }
+    transform: translate(5rem, -80rem); }
   100% {
     transform: translate(0); } }
 
@@ -893,45 +898,43 @@ body {
         background-color: #C89EC4;
         left: 98%; }
     .particles__item--anim1 {
-      animation-delay: -54s; }
+      animation-delay: -57s; }
     .particles__item--anim2 {
-      animation-delay: -42s; }
+      animation-delay: -45s; }
     .particles__item--anim3 {
-      animation-delay: -30s; }
+      animation-delay: -33s; }
     .particles__item--anim4 {
-      animation-delay: -18s; }
+      animation-delay: -21s; }
     .particles__item--anim5 {
-      animation-delay: -6s; }
-    .particles__item--anim6 {
-      animation-delay: 0s; }
+      animation-delay: -9s; }
     .particles__item--anim7 {
-      animation-delay: 6s; }
+      animation-delay: 11.4s; }
     .particles__item--anim8 {
-      animation-delay: 7.2s; }
+      animation-delay: 10.2s; }
     .particles__item--anim9 {
-      animation-delay: 8.4s; }
+      animation-delay: 22.2s; }
     .particles__item--anim10 {
-      animation-delay: 9.6s; }
+      animation-delay: 34.2s; }
     .particles__item--anim11 {
-      animation-delay: -48s; }
+      animation-delay: -51s; }
     .particles__item--anim12 {
-      animation-delay: -36s; }
+      animation-delay: -39s; }
     .particles__item--anim13 {
-      animation-delay: -24s; }
+      animation-delay: -27s; }
     .particles__item--anim14 {
-      animation-delay: -12s; }
+      animation-delay: -15s; }
     .particles__item--anim15 {
-      animation-delay: 12s; }
+      animation-delay: 16.2s; }
     .particles__item--anim16 {
-      animation-delay: 24s; }
+      animation-delay: 28.2s; }
     .particles__item--anim17 {
-      animation-delay: 36s; }
+      animation-delay: 40.2s; }
     .particles__item--anim18 {
-      animation-delay: 48s; }
+      animation-delay: 52.2s; }
     .particles__item--anim19 {
-      animation-delay: 54s; }
+      animation-delay: 58.2s; }
     .particles__item--anim20 {
-      animation-delay: 57s; }
+      animation-delay: 46.2s; }
 
 .courses {
   width: 100%;
