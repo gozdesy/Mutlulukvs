@@ -556,8 +556,7 @@ body {
       letter-spacing: initial; } }
   @media only screen and (max-width: 56.25em) {
     .footer {
-      padding: 4rem;
-      margin-top: 1rem; } }
+      padding: 4rem; } }
   .footer__cell {
     width: 100%;
     height: 8rem;
